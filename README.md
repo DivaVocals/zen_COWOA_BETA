@@ -1,7 +1,7 @@
 zen_COWOA_BETA
 ==============
 
-This is a beta test of four versions of COWOA Module for Zen Cart v2.6
+This is a beta test of four versions of Check-Out-With-Out-Account COWOA Module for Zen Cart 
 
 ============
 
@@ -28,4 +28,6 @@ ZenCart_1.5.2
 ZenCart_1.5.3
 
 All three have been tested and working on both live and test sites, at this time the sql script works on all three... 
+This is a work in progress thus BETA status.. ready for distrubution are on the ZenCart download page.
+The ZC 1.5.3 set will be modified to take the next step into ZC 1.6.0 and should not be used below 1.5.3 or your site will die...
 Sorry, but this is all I'm saying for now... more help files to come, but have to create something first!
