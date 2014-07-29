@@ -13,7 +13,7 @@
 
 // do not run installer on log in page or if already at current version
  if (!(basename($PHP_SELF) == FILENAME_LOGIN . ".php")) {
-if (COWOA_VERSION != '2.4.1') {  
+if (CW_VERSION != '2.4.1') {  
 
 
     // set version
@@ -28,7 +28,7 @@ $isit_installed = '';
 
     /*    */ 
     // Screen activity
- 	$isit_installed = 'COWOA v' . $version . ' for ZenCart Installing...<br/>';
+ 	echo 'COWOA v' . $version . ' for ZenCart Installing...<br/>';
   
      // Configuration Values to create or preserve
     $menu_items_image = array(
@@ -41,11 +41,11 @@ $isit_installed = '';
             array('Enable Customer Service Checkout Page Box','COWOA_CS_BOX','true','Enable <strong>Customer Service</strong> Checkout Page Box?<br />Set to True so that the <strong>Customer Service</strong> checkout page box will display. The content of this checkout box is managed using the banner manager. Create a banner for this box (only one) and the system will use the banner title for the box title (suggest using <strong>Customer Service</strong>) and the content will appear in the box.',16,array('true','false')),
             array('Banner Display Groups Customer Service','SHOW_BANNERS_GROUP_CUSTOMER_SERVICE','cust-service','For "Customer Service" box content on Login page',17,false),
             array('Banner Display Groups Shop with Confidence','SHOW_BANNERS_GROUP_CHECKOUT_CONFIDENCE','shop-confidence','For "Shop with Confidence" box on Login page',18,false),
-            array('COWOA Version','CW_VERSION','2.4.1','COWOA version',19,false)
+            array('COWOA Version','CW_VERSION',$version,'COWOA version',19,false)
             );
 
 $overwrite_item = array(
-      array('COWOA Version', 'CW_VERSION', '2.4.1', 'COWOA version',19,false),
+      array('COWOA Version', 'CW_VERSION', $version, 'COWOA version',19,false),
       array('Use split-login page','USE_SPLIT_LOGIN_MODE','True','The login page can be displayed in two modes: Split or Vertical.<br />In Split mode, the create-account options are accessed by clicking a button to get to the create-account page. In Vertical mode, the create-account input fields are all displayed inline, below the login field, making one less click for the customer to create their account.<br />Default: False','19',array('True', 'False'))
     );
               
